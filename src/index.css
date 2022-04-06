@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+#root{
+  margin: 0 auto;
+  width: 317px;
+  height: 100vh;
+  top: 44px;
+  left: 116px;
+
+
+}
+
+.profile {
+  
+  width: 317px;
+  height: 317px;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(./images/about1.png);
+  position: relative;
+  
+
+}
+
+
+
+.mainContent{
+  background: #1A1B21;
+  width: 317px;
+  height: 399px;
+  top: 361px;
+  left: 116px;
+}
+
+.footer{
+  background: #161619;
+  width: 317px;
+  height: 64px;
+  top: 760px;
+  left: 116px;
+  border-radius: 0 0 10px 10px;
+}
+
+h1{
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: -9px;
+
+}
+
+h3{
+  height: 14px;
+  left: 186px;
+  top: 414px;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #F3BF99;
+
+}
+
+.website{
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+.buttons{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  
+}
+.email {
+  border-style: none;
+  flex-basis: 40%;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  width: 115px;
+  height: 34px;
+  left: 283px;
+  top: 468px;
+  border-radius: 6px;
+  margin-left: 12px;
+}
+
+.email:hover{
+  background-color: blanchedalmond;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  width: 115px;
+  height: 34px;
+  left: 283px;
+  top: 468px;
+  font-weight: bold;
+}
+
+button img{
+  padding-right: 4px;
+}
+
+.icon{
+ margin-bottom: -2px;
+}
+.linkedin{
+  border-style: none;
+  margin-right: 12px;
+  flex-basis: 40%;
+  height: 34px;
+  width: 115px;
+  left: 283px;
+  top: 468px;
+  border-radius: 6px;
+  padding: 9px, 13px, 9px, 11px;
+  background: #5093E2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.linkedin:hover{
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+.body{
+  padding-left: 28px;
+}
+
+.about{
+  color: #DCDCDC;
+  margin-bottom: -8px;
+}
+.about-body {
+  color: #DCDCDC;
+  width: 247px;
+  height: 61px;
+  left: 152px;
+  top: 561px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  margin-bottom: 2px;
+}
+
+.interest{
+  margin-bottom: -8px;
+  width: 242.71px;
+  height: 21px;
+  left: 152px;
+  top: 649px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  
+  
+  color: #F5F5F5;
+  
+}
+
+.interest-body{
+  width: 247px;
+  height: 61px;
+  left: 152px;
+  top: 675px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+
+
+  color: #DCDCDC;
+
+}
+
+
+
+
+
+.footer{
+  padding-top: 16px;
+  text-align: center;
+  
+}
+
+.facebook{
+  padding-right: 8px;
+}
+
+.twitter{
+  padding-right: 8px;
+}
+
+.github{
+  padding-right: 8px;
+}
+
