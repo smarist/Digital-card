@@ -13,19 +13,80 @@
 }
 
 .profile {
-  
+  display: flex;
   width: 317px;
   height: 317px;
   border-radius: 10px 10px 0px 0px;
   background-image: url(./images/about1.png);
-  position: relative;
-  
+}
 
+.toggler--light {
+  margin-left: 175px;
+  margin-top: 9px;
+  margin-right: -8px;
+  
+}
+.toggler--light-dark{
+  color: rgb(161, 158, 158);
+  font-weight: 200;
+  margin-left: 175px;
+  margin-top: 9px;
+  margin-right: -8px;
+}
+
+.toggler--dark{
+  margin-top: 10px;
+  margin-left: 7px;
+  color: gray;
+}
+.toggler--dark-light{
+  margin-top: 10px;
+  margin-left: 7px;
+}
+
+.toggler{
+  display: flex;
+  justify-content: end;
 }
 
 
+.toggler--slider{
+  margin-right: -3px;
+  margin-left: 12px;
+  margin-top: 8px;
+  justify-self: flex-end;
+  height: 18px;
+  width: 36px;
+  background-color: #F3BF99;
+  border-radius: 20px;
+  display: flex;
+}
 
-.mainContent{
+.toggler--slider--circle{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.toggler-slider--circle-dark{
+  margin-left: 17px;
+  background-color: grey;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+}
+
+
+ main{
+  background: #F5F5F5;
+  width: 317px;
+  height: 399px;
+  top: 361px;
+  left: 116px;
+}
+
+.mainContent-dark{
   background: #1A1B21;
   width: 317px;
   height: 399px;
@@ -43,6 +104,21 @@
 }
 
 h1{
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2B283A;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: -9px;
+
+}
+
+.h1-dark{
   padding-top: 20px;
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -68,11 +144,37 @@ h3{
   line-height: 15px;
   letter-spacing: 0em;
   text-align: center;
+  color: #F47D;
+
+}
+
+.h3-dark{
+  height: 14px;
+  left: 186px;
+  top: 414px;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
   color: #F3BF99;
 
 }
 
 .website{
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4a4e74;
+}
+
+.website-dark{
   font-family: Inter;
   font-size: 10px;
   font-style: normal;
@@ -90,6 +192,20 @@ h3{
   
 }
 .email {
+  background: white;
+  border-style: none;
+  flex-basis: 40%;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  width: 115px;
+  height: 34px;
+  left: 283px;
+  top: 468px;
+  border-radius: 6px;
+  margin-left: 12px;
+}
+
+.email-dark {
   border-style: none;
   flex-basis: 40%;
   align-items: center;
@@ -130,6 +246,21 @@ button img{
   top: 468px;
   border-radius: 6px;
   padding: 9px, 13px, 9px, 11px;
+  background: #297FE5;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.linkedin-dark{
+  border-style: none;
+  margin-right: 12px;
+  flex-basis: 40%;
+  height: 34px;
+  width: 115px;
+  left: 283px;
+  top: 468px;
+  border-radius: 6px;
+  padding: 9px, 13px, 9px, 11px;
   background: #5093E2;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
@@ -146,10 +277,31 @@ button img{
 }
 
 .about{
-  color: #DCDCDC;
+  color: #2B283A;
   margin-bottom: -8px;
 }
+
+.about-dark{
+  color: #F5F5F5;
+  margin-bottom: -8px;
+}
+
+
 .about-body {
+  color: #4a4e74;
+  width: 247px;
+  height: 61px;
+  left: 152px;
+  top: 561px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  margin-bottom: 2px;
+}
+
+.about-body-dark {
   color: #DCDCDC;
   width: 247px;
   height: 61px;
@@ -169,15 +321,26 @@ button img{
   height: 21px;
   left: 152px;
   top: 649px;
-  
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
+  color: #2B283A;
   
-  
+}
+
+.interest-dark{
+  margin-bottom: -8px;
+  width: 242.71px;
+  height: 21px;
+  left: 152px;
+  top: 649px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
   color: #F5F5F5;
   
 }
@@ -192,22 +355,40 @@ button img{
   font-weight: 400;
   font-size: 10.24px;
   line-height: 150%;
-  /* or 15px */
+  color: #4a4e74;
 
+}
 
+.interest-body-dark{
+  width: 247px;
+  height: 61px;
+  left: 152px;
+  top: 675px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
   color: #DCDCDC;
 
 }
 
-
-
-
-
 .footer{
   padding-top: 16px;
   text-align: center;
+  background-color: #D5D4D8;
   
 }
+
+
+
+.footer-dark{
+  padding-top: 16px;
+  text-align: center;
+  background-color: #161619;
+  
+}
+
 
 .facebook{
   padding-right: 8px;
@@ -220,4 +401,6 @@ button img{
 .github{
   padding-right: 8px;
 }
+
+
 

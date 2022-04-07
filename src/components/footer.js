@@ -7,13 +7,13 @@ import Instagram from '../images/Instagram.png'
 
 
 
-export default function Footer(){
+export default function Footer(props){
     return (
-        <div className='footer'>
+        <footer className={props.mode ? 'footer-dark': 'footer'}>
             <img src={Facebook} className='facebook'></img>
             <img src= {Twitter} className='twitter'></img>
             <img src={GitHub} className='github'></img>
             <img src={Instagram} className='instagram'></img>
-        </div>
+        </footer>
     )
 }

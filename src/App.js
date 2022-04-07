@@ -6,11 +6,26 @@ import Footer from '../src/components/footer'
 
 
 export default function App() {
+
+  const [mode, setMode] = React.useState(false)
+
+  function toggleMode () {
+      setMode(prevMode => !prevMode)
+      
+  }
+
   return (
     <div>
-        <Header/>
-        <MainContent />
-        <Footer />
+        <Header 
+        toggleMode={toggleMode}
+        mode = {mode}
+         
+        />
+        <MainContent
+        mode = {mode}
+         />
+        <Footer 
+        mode = {mode} />
     </div>
     
   )
