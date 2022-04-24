@@ -5,14 +5,29 @@ import Linkedin from '../images/Vector.png';
 
 
 export default function MainContent(props) {
+    function onClickEmail() {
+        return (
+            <a href='mailto:stmarisnwokike@gamil.com'>Email</a>
+        )
+    }
+
+    function onClickLinkedIn() {
+        return (
+            <a href='http://linkedin.com/in/stellamaris-nwokike-9b223118a'>Email</a>
+        )
+    }
     return (
         <main className= {props.mode ? "mainContent-dark": ""}>
             <h1 className={props.mode? "h1-dark": ""}>Stellamaris Nwokike</h1>
             <h3 className={props.mode? "h3-dark": ""}>Frontend Developer</h3>
             <p className= {props.mode ? "website-dark":"website"}>Uccodes.website</p>
             <div className='buttons'>
-                <button className={props.mode ? "email-dark":"email"}><img src={Email}></img>Email</button>
-                <button className={props.mode? "linkedin-dark": "linkedin"}><img src={Linkedin} className='icon'></img>Linkedin</button>
+                <button 
+                onClick={onClickEmail}
+                className={props.mode ? "email-dark":"email"}><img src={Email}></img></button>
+                <button 
+                onClick={onClickLinkedIn}
+                className={props.mode? "linkedin-dark": "linkedin"}><img src={Linkedin} className='icon'></img>Linkedin</button>
             </div>
             <div className='body'>
                 <h4 className={props.mode? "about-dark": "about"}>About</h4>

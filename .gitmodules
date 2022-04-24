@@ -1,0 +1,3 @@
+[submodule "Digital-card"] 
+  path = Digital-card 
+  url = https://github.com/smarist/Digital-card.git
